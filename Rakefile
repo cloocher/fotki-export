@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gemspec|
   gemspec.summary = 'Fotki.com photo export tool.'
   gemspec.description = 'Simple command line tool to download all your photos from Fotki.com'
   gemspec.email = 'gene.drabkin@gmail.com'
-  gemspec.homepage = 'https://github.com/cloocher/fotki-exporter'
+  gemspec.homepage = 'https://github.com/cloocher/fotki-export'
   gemspec.authors = ['Gene Drabkin']
   gemspec.files = FileList['fotki-export.gemspec', 'Rakefile', 'README', 'VERSION', 'lib/**/*', 'bin/**/*']
   gemspec.add_dependency 'watir-webdriver', '>= 0.2.2'
