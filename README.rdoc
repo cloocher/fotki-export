@@ -1,8 +1,6 @@
-= Fotki Export -- Tool to download picture from Fotki.com
+== Fotki Export -- Tool to download picture from Fotki.com
 
-= Installing Fotki Export
-
-== Installing the Gem
+== Installing Fotki Export 
     $ gem install fotki-export
 
 == Usage
