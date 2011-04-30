@@ -12,3 +12,7 @@
         -b --browser BROWSER (firefox|chrome|ie)  browser
 
     fotki-export -u fotki_user -p fotki_password -d /tmp/fotki -b firefox
+
+== Copyright
+
+Copyright (c) 2011 Gene Drabkin. See LICENSE for details.
