@@ -1,0 +1,16 @@
+= Fotki Export -- Tool to download picture from Fotki.com
+
+= Installing Fotki Export
+
+== Installing the Gem
+    $ gem install fotki-export
+
+== Usage
+
+    fotki-export -u <fotki username> -p <fotki password> -d </path/to/save/photos> -b [firefox|chrome|ie]
+        -u, --user USER                           username
+        -p, --pass PASSWORD                       password
+        -d, --dir DIR                             directory
+        -b --browser BROWSER (firefox|chrome|ie)  browser
+
+    fotki-export -u fotki_user -p fotki_password -d /tmp/fotki -b firefox

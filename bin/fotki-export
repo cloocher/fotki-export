@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+#
+# Copyright 2011 Gene Drabkin
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+$:.unshift(File::join(File::dirname(File::dirname(__FILE__)), 'lib'))
+
+require 'rubygems'
+require 'optparse'
+require 'fotki'
+
+username = password = directory = nil
+browser = 'firefox'
+
+opts = OptionParser.new do |opts|
+  opts.banner = 'Usage: fotki-export -u <fotki username> -p <fotki password> -d </path/to/save/photos> -b [firefox|chrome|ie]'
+  opts.on('-u', '--user USER', 'username') {|u| username = u}
+  opts.on('-p', '--pass PASSWORD', 'password') {|p| password = p}
+  opts.on('-d', '--dir DIR', 'directory') {|d| directory = d}
+  opts.on('-b', '--browser BROWSER (firefox|chrome|ie)', 'browser') {|b| browser = b}
+end
+
+opts.parse!(ARGV)
+
+unless username and password and directory
+  puts opts
+  exit 1
+end
+
+Fotki.new(username, password, directory, browser.to_sym).export

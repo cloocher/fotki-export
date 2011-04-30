@@ -1,0 +1,7 @@
+rdoc
+pkg
+Gemfile.lock
+.idea
+*.gem
+.bundle
+.DS_Store
