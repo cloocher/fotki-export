@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fotki-export}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gene Drabkin"]
   s.date = %q{2011-04-30}
-  s.description = %q{Simple command line to download all your photos from Fotki.com}
+  s.description = %q{Simple command line tool to download all your photos from Fotki.com}
   s.email = %q{gene.drabkin@gmail.com}
   s.executables = ["fotki-export"]
   s.extra_rdoc_files = [
