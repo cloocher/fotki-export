@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fotki-export}
-  s.version = "0.0.2"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gene Drabkin"]
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     "fotki-export.gemspec",
     "lib/fotki.rb"
   ]
-  s.homepage = %q{https://github.com/cloocher/fotki-exporter}
+  s.homepage = %q{https://github.com/cloocher/fotki-export}
   s.require_paths = ["lib"]
   s.requirements = ["none"]
   s.rubygems_version = %q{1.7.2}
