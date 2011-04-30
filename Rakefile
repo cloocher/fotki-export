@@ -17,7 +17,7 @@ task :default => :gemspec
 Jeweler::Tasks.new do |gemspec|
   gemspec.name = 'fotki-export'
   gemspec.summary = 'Fotki.com photo export tool.'
-  gemspec.description = 'Simple command line to download all your photos from Fotki.com'
+  gemspec.description = 'Simple command line tool to download all your photos from Fotki.com'
   gemspec.email = 'gene.drabkin@gmail.com'
   gemspec.homepage = 'https://github.com/cloocher/fotki-exporter'
   gemspec.authors = ['Gene Drabkin']
