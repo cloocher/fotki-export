@@ -1,4 +1,4 @@
-== Fotki Export -- Tool to download picture from Fotki.com
+== Fotki Export -- Tool to download all photos from a Fotki.com account.
 
 == Installing Fotki Export 
     $ gem install fotki-export
